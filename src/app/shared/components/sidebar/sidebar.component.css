@@ -1,0 +1,9 @@
+.sidebar {
+    width: 200px;
+}
+
+.custom__mat-list {
+    color: #8f5a76;
+    border-bottom: 1px solid #8f5a76;
+    width: 118%;
+}

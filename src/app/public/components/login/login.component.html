@@ -1,0 +1,60 @@
+<app-header>
+</app-header>
+<mat-drawer-container class="app-container">
+    <mat-card-content class="content">
+
+        <div class="content-left">
+            <img src="../assets/1608202921_signup.png" />
+            <br>
+        </div>
+        <div class="content-right">
+            <div class="card-container" fxLayout="row wrap">
+                <div class="card-content" fxFlex="80%" fxFlex.xs="80%" fxFlex.sm="80%">
+                    <mat-card class="mat-elevation-z4">
+                        <div style="color: #81003c; text-align: center; top: 50%;">
+                            <h3>Welcome to </h3> <br>
+                            <h1> <b>Common Modification System </b></h1>
+                        </div>
+
+                        <form class="matformfiled" [formGroup]="loginForm">
+                            <h1 style="color: #81003c; text-align: center; margin-right: 25%;">Login</h1>
+                            <mat-form-field appearance="outline" class="full-width">
+                                <mat-label>Username</mat-label>
+                                <input matInput placeholder="username" style="color: #81003c" formControlName='userName' />
+                                <mat-icon matSuffix>account_circle</mat-icon>
+                                <!-- <mat-hint>Hint</mat-hint> -->
+                                <mat-error *ngIf="
+          loginForm.controls['userName'].hasError('required')
+          ">
+                                    User Name is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                            <mat-form-field appearance="outline" class="full-width">
+                                <mat-label>Password</mat-label>
+                                <input matInput placeholder="***********" type="password" style="color: #81003c" formControlName='Password' />
+                                <mat-icon matSuffix>vpn_key</mat-icon>
+                                <!-- <mat-hint>Hint</mat-hint> -->
+                                <mat-error *ngIf="
+                    loginForm.controls['Password'].hasError('required')
+                    ">
+                                    Password is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+
+                        </form>
+                        <mat-card-actions class="btnside">
+                            <button mat-raised-button color="primary">
+          Login
+        </button>
+                            <button mat-raised-button style="margin:10px;">Cancel</button>
+                            <br>
+                            <span>
+        <a  style="margin-left: 5%;" routerLink="/forgot-password">Forgot Your Password ? </a>
+      </span>
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+    </mat-card-content>
+</mat-drawer-container>

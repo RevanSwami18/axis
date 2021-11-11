@@ -1,0 +1,16 @@
+.app-spacer {
+    flex: 1 1 auto;
+}
+
+.mat-toolbar {
+    background-color: #81003c;
+    height: 41px;
+}
+
+.logo_unit {
+    position: relative;
+    left: -16px;
+    z-index: 3;
+    height: 101px;
+    top: 27px;
+}

@@ -1,0 +1,55 @@
+.app-container {
+    height: 94vh;
+    width: 100%;
+    background-color: white;
+    
+}
+
+
+
+.app-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: -54px;
+    overflow: hidden !important;
+    height: 100vh;
+}
+
+.custom__mat-drawer {
+    margin-top: 62px;
+    width: 234px;
+    background-color: #e1e8f0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 85vh;
+}
+
+.logout__button {
+    position: absolute;
+    top: 66px;
+    right: 250px;
+    z-index: 3;
+    width: 150px;
+    height: 47px;
+    background-color: #81003c;
+    font-size: x-large;
+}
+
+.user__link {
+    position: absolute;
+    top: 78px;
+    right: 484px;
+    z-index: 3;
+    width: 107px;
+    height: 39px;
+    color: #81003c;
+    font-size: xx-large;
+    font-weight: 100;
+}
+
+.material-icons {
+    position: absolute;
+    top: 64px;
+    right: 593px;
+    z-index: 3;
+    font-size: xxx-large;
+}
